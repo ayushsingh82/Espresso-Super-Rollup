@@ -54,8 +54,16 @@ The Additional Use Grant also permits the deployment of the Nitro software, in a
 
 For those that prefer to deploy the Nitro software either directly on Ethereum (i.e. an L2) or have it settle to another Layer-2 on top of Ethereum, the [Arbitrum Expansion Program (the "AEP")](https://docs.arbitrum.foundation/aep/ArbitrumExpansionProgramTerms.pdf) was recently established. The AEP allows for the permissionless deployment in the aforementioned fashion provided that 10% of net revenue is contributed back to the Arbitrum community in accordance with the requirements of the AEP.
 
-## Contact
 
-Discord - [Arbitrum](https://discord.com/invite/5KE54JwyTs)
+# Layer 2 Optimization Contracts
 
-Twitter: [Arbitrum](https://twitter.com/arbitrum)
+This collection of smart contracts implements various Layer 2 specific optimizations for the Espresso rollup, focusing on data compression, calldata optimization, and custom precompiles.
+
+## Overview
+
+The system consists of four main contracts that work together to optimize L2 operations:
+
+1. DataCompression.sol
+2. CalldataOptimizer.sol
+3. CustomPrecompiles.sol
+4. L2OptimizationRegistry.sol
