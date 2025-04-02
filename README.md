@@ -67,3 +67,105 @@ The system consists of four main contracts that work together to optimize L2 ope
 2. CalldataOptimizer.sol
 3. CustomPrecompiles.sol
 4. L2OptimizationRegistry.sol
+
+
+
+
+## Contract Details
+
+### DataCompression.sol
+
+Handles efficient data compression for L2 transactions to reduce calldata costs.
+
+Key features:
+- RLP encoding for data compression
+- Automatic threshold detection for compression
+- Lossless decompression capabilities
+
+
+### CalldataOptimizer.sol
+
+Optimizes transaction calldata by batching and restructuring calls.
+
+Key features:
+- Transaction batching
+- Similar call grouping
+- Parameter optimization
+- Configurable batch sizes
+
+
+### CustomPrecompiles.sol
+
+Implements commonly used operations as precompiles for gas optimization.
+
+Key features:
+- Batch string operations
+- Optimized cryptographic functions
+- Efficient mathematical computations
+
+
+### L2OptimizationRegistry.sol
+
+Main registry contract that coordinates all optimization features.
+
+Key features:
+- Central management of optimization contracts
+- Automated optimization pipeline
+- Transaction parsing and routing
+
+
+## Gas Optimization Benefits
+
+- Reduced calldata costs through compression
+- Efficient batch processing
+- Optimized precompiles for common operations
+- Reduced storage operations
+
+## Security Considerations
+
+- All compression is lossless to maintain data integrity
+- Batch size limits prevent DOS attacks
+- Pure functions used where possible to prevent state changes
+- Input validation on all public functions
+
+## Development
+
+### Prerequisites
+- Solidity ^0.8.0
+- Hardhat or Truffle development environment
+
+
+
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+
+MIT
+
+## Future Improvements
+
+1. **Data Compression**
+   - Implement additional compression algorithms
+   - Add dynamic compression ratio selection
+   - Optimize for specific data types
+
+2. **Calldata Optimization**
+   - Add more sophisticated batching strategies
+   - Implement cross-transaction optimization
+   - Add priority-based execution
+
+3. **Custom Precompiles**
+   - Add more commonly used operations
+   - Implement specialized L2 operations
+   - Optimize for specific use cases
+
+## Contact
+
+For questions and support, please open an issue in the repository.
